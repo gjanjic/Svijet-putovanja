@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svijet Putovanja</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+  </head>
+  <body>
+    <header>
+      <img src="images/icon.png" class="icon-header" />
+      <nav>
+        <ul class="list">
+          <li><a href="index.html" class="link">Naslovna</a></li>
+          <li><a href="destinacije.html" class="link">Destinacije</a></li>
+          <li><a href="galerija.html" class="link">Galerija</a></li>
+          <li><a href="kontakt.html" class="link">Kontakt</a></li>
+          <li><a href="o-nama.html" class="link">O nama</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-kontakt">
+      <h1 class="naslov-lokacija">Lokacija naše putničke agencije</h1>
+      <div class="div-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25256.739947377217!2d15.975271482621297!3d45.76588592864387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d5f709c6511f%3A0x9e91747b92249748!2sSvijet%20Putovanja!5e0!3m2!1shr!2shr!4v1733843324564!5m2!1shr!2shr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="map"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <form class="form">
+        <label for="ime">Ime:</label>
+        <input
+          type="text"
+          id="ime"
+          name="ime"
+          required
+          placeholder="Unesite ime:"
+        />
+        <label for="prezime">Prezime:</label>
+        <input
+          type="text"
+          id="prezime"
+          name="prezime"
+          required
+          placeholder="Unesite prezime:"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Unesite email:"
+        />
+
+        <label for="grad">Odredište putovanja:</label>
+        <select id="grad" name="grad">
+          <option value>Odaberite:</option>
+          <option value="Hrv">Budimpešta</option>
+          <option value="Bih">London</option>
+          <option value="Slo">Paris</option>
+        </select>
+        <label for="posebna-poruka">Posebna poruka:</label>
+        <textarea
+          id="posebna-poruka"
+          name="posebna-poruka"
+          placeholder="Upišite poruku.."
+        ></textarea>
+        <input type="submit" />
+      </form>
+    </main>
+    <footer>
+      <a href="https://www.instagram.com/nijejane/" target="_blank">
+        <img
+          src="images/instagram-icon.png"
+          class="icon-footer"
+          alt="ikona instagrama"
+        />
+      </a>
+      <a href="https://github.com/gjanjic/" target="_blank">
+        <img
+          src="images/github-icon.png"
+          class="icon-footer"
+          alt="ikona githuba"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

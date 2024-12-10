@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+/************HEADER***********/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #81baeb;
+  padding: 0.5rem 3rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.icon-header {
+  height: 6rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 2.5rem;
+  list-style: none;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #000000;
+
+  padding: 1rem;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+
+/************Naslovna-body***********/
+.naslov {
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #0d1317;
+}
+.avion {
+  padding: 2rem 1rem 1rem 1rem;
+  height: 40rem;
+}
+.fig {
+  font-size: 1.2rem;
+}
+
+.paragrafi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.paragraf {
+  font-size: sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin: 3rem 4rem 3rem;
+  max-width: 130rem;
+  margin: 0 auto 5rem;
+}
+
+.slike {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*************FOOTER***********/
+footer {
+  background-color: #8ec1ed;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+.icon-footer {
+  height: 5rem;
+}
+
+/*************DESTINACIJE***********/
+/*************MAIN***********/
+.gradovi {
+  height: 42rem;
+  width: 64rem;
+}
+h2 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 4rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  background-color: #9ac8ef;
+  border: none;
+  border-radius: 50rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/*************KONTAKT***********/
+.naslov-lokacija {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.map {
+  width: 90rem;
+  height: 85rem;
+}
+.main-kontakt {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: arial;
+}
+
+label {
+  font-size: 3rem;
+}
+input,
+select,
+textarea {
+  width: 50rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+}
+
+textarea {
+  height: 10rem;
+}
+
+/*************O NAMA***********/
+.video {
+  margin: 0 0 7rem;
+}
+.main-onama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.naslov-onama {
+  text-align: center;
+  font-size: 4.2rem;
+  margin: 3rem 0 2rem;
+}
+
+.podnaslov-onama {
+  padding: 0;
+  font-size: 3.2rem;
+}
+
+/*************GALERIJA***********/
+.naslov-galerija {
+  font-weight: 800;
+  font-size: 5rem;
+  margin: 2rem 0 0;
+  color: black;
+}
+
+.galerija-grid {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.img {
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+}
+
+figurecaption {
+  margin-left: 1rem;
+}
+h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin: 3rem 0 2rem;
+}
+.footer-galerija {
+  margin-top: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  header {
+    flex-direction: column;
+    position: relative;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+  .paragraf {
+    font-size: 2rem;
+  }
+  .galerija-grid {
+    grid-template-columns: 1fr;
+  }
+  .gradovi {
+    height: 32rem;
+    width: 42rem;
+  }
+
+  .naslov {
+    font-size: 3.2rem;
+  }
+
+  .avion {
+    height: 30rem;
+  }
+  .video {
+    height: 30rem;
+    width: 40rem;
+  }
+  .main-kontakt {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .form {
+    max-width: 90%;
+    margin-left: 3rem;
+  }
+  .div-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input,
+  select,
+  textarea {
+    max-width: 90%;
+  }
+  .map {
+    margin-top: 1rem;
+    height: 30rem;
+    width: 38rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+  header {
+    position: relative;
+  }
+  .main {
+    max-width: 90%;
+  }
+  .paragraf {
+    font-size: 2.4rem;
+  }
+  .gradovi {
+    height: 34rem;
+    width: 48rem;
+  }
+  .galerija-grid {
+    max-width: 92%;
+  }
+  .main-kontakt {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .map {
+    margin-top: 1rem;
+    height: 50rem;
+    width: 80rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+  input,
+  select,
+  textarea {
+    width: 70rem;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.4rem;
+    border: 1px solid black;
+  }
+  .paragraf-onama {
+    font-size: 2.8rem;
+  }
+}
